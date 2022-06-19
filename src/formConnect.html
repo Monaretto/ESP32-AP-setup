@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body style="height: 100%; width: 100%; overflow: hidden;">
+        <div style="height: 100%; width: 100%; padding: 10px; display: flex;flex-direction: column;align-items: center;">
+            <h1>Configuração BMS Titanium</h1>
+            <form id="setupForm" action="/setup" method="post">
+                <label for="ssid">Nome da Rede:</label><br>
+                <input type="text" id="ssid" name="ssid"><br>
+                <label for="pass">Senha:</label><br>
+                <input type="password" id="pass" name="pass"><br><br>
+                <input type="submit" name="Submit">
+            </form> 
+            <iframe id="ifrm1" name="ifrm1" style="display:none"></iframe>
+        </div>
+    </body>
+</html>
