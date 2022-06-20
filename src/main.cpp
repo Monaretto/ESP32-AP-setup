@@ -184,15 +184,6 @@ char HandleSetupMessage()
   }
   return out;
 }
- 
-void EspSetup()
-{
-  server.close();
-  WiFi.softAPdisconnect();
-  WiFi.mode(WIFI_MODE_STA);
-
-  Serial.println(WiFi.begin(s_WifiInfo.s_Ssid.c_str(), s_WifiInfo.s_Password.c_str()));
-}
 
 void SetupLoop()
 {
